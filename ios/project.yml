@@ -1,0 +1,27 @@
+name: BetterUntisIOS
+options:
+  bundleIdPrefix: com.sapuseven.untis
+settings:
+  base:
+    SWIFT_VERSION: 5.0
+targets:
+  BetterUntisIOS:
+    type: application
+    platform: iOS
+    deploymentTarget: "15.0"
+    sources:
+      - path: BetterUntisIOS/Sources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.sapuseven.untis.ios
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: BetterUntis
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight
+schemes:
+  BetterUntisIOS:
+    build:
+      targets:
+        BetterUntisIOS: all
